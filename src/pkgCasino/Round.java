@@ -35,4 +35,9 @@ public class Round {
 	{
 		return ComeOutRoll().isNatural();
 	}
+	
+	public boolean isCraps()
+	{
+		return ComeOutRoll().isCraps();
+	}
 }

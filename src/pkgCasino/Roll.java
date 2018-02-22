@@ -38,4 +38,34 @@ public class Roll {
 	{
 		return (ScoreRoll()==11) ? true: false;
 	}
+	
+	public boolean isCraps()		//Checks for Craps
+	{
+		return isTwo() || isThree() || isTwelve();
+	}
+	
+	public boolean isTwo()
+	{
+		return (ScoreRoll()==2) ? true : false;
+	}
+	
+	public boolean isThree()
+	{
+		return (ScoreRoll()==3) ? true : false;
+	}
+	
+	public boolean isTwelve()
+	{
+		return (ScoreRoll()==3) ? true : false;
+	}
+	
+	public boolean isRoundOver() 
+	{
+		return (isNatural() || isCraps());
+	}
+	
+	public boolean isPoint()
+	{
+		return (ScoreRoll()==4 || ScoreRoll()==5 || ScoreRoll()==6 || ScoreRoll()==8 || ScoreRoll()==9 || ScoreRoll()==10);
+	}
 }
